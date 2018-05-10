@@ -11,7 +11,7 @@ def readfile(filename, dtype):
         a =list(map(dtype, a[0:-1]))
         arr.append(a)
     
-    return np.array(arr)
+    return (np.array(arr) -1)
     
 
 

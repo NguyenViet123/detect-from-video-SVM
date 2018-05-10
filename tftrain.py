@@ -14,8 +14,8 @@ def tftrain(X_train, y_labels, X_test, y_test, K, n_epoch, batch_size):
     x_data = tf.placeholder(shape=[None, K], dtype=tf.float32)
     y_target = tf.placeholder(shape=[None, ], dtype=tf.int32)
 
-    W = tf.Variable(tf.random_normal(shape=[K, 10]))
-    b = tf.Variable(tf.random_normal(shape=[1, 10]))
+    W = tf.Variable(tf.random_normal(shape=[K, 7]))
+    b = tf.Variable(tf.random_normal(shape=[1, 7]))
 
     model_output = tf.add(tf.matmul(x_data, W), b)
     l2_norm = tf.norm(W)
