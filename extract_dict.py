@@ -44,7 +44,7 @@ def dictionary(allDesOfKeypoin, K):
     kmean = KMeans(n_clusters=K).fit(allDesOfKeypoin)
     return np.array(kmean.cluster_centers_)
 
-K = 150
+K = 200
 dictionary = dictionary(allDesOfKeypoin, K)
 
 # featureEngin tung anh
